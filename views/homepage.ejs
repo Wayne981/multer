@@ -3,98 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Uploads</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', sans-serif;
-            background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .upload-container {
-            background-color: rgba(255, 255, 255, 0.15);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            width: 350px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .upload-container:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-        }
-
-        .upload-container h1 {
-            font-size: 26px;
-            margin-bottom: 25px;
-            color: #fff;
-            letter-spacing: 1px;
-        }
-
-        .upload-container input[type="file"] {
-            padding: 10px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #fff;
-            width: 100%;
-            margin-bottom: 20px;
-            transition: border 0.3s;
-        }
-
-        .upload-container input[type="file"]:hover {
-            border-color: #fff;
-        }
-
-        .upload-container button {
-            background-color: #4CAF50; /* Green */
-            color: #fff;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-            width: 100%;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .upload-container button:hover {
-            background-color: #388E3C; /* Darker Green */
-            transform: translateY(-2px);
-        }
-
-        .upload-container p {
-            margin-top: 15px;
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .upload-container p a {
-            color: #FF5722; /* Vibrant Orange */
-            text-decoration: none;
-        }
-
-        .upload-container p a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>File uploads</title>
 </head>
 <body>
-    <div class="upload-container">
-        <h1>Upload Your Profile Image</h1>
-        <form action="/upload" method="POST" enctype="multipart/form-data">
-            <input type="file" name="profileImage" required />
-            <button type="submit">Upload</button>
-        </form>
-        <p>Accepted formats: .jpg, .png, .gif</p>
-    </div>
+    <!-- Removed the extra opening form tag -->
+    <!-- Added type="submit" to the button -->
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="profileImage"/> <!-- Corrected name attribute -->
+   <!-- <input type="file" name="coverImage" /> --><!--when we have two images to be uploaded-->
+        <button type="submit">Upload</button> <!-- Added type attribute -->
+    </form>
 </body>
 </html>
+
+
+
+
+<!-- since file , encryption is added -->
