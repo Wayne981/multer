@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File uploads</title>
+</head>
+<body>
+    <!-- Removed the extra opening form tag -->
+    <!-- Added type="submit" to the button -->
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="profileImage"/> <!-- Corrected name attribute -->
+   <!-- <input type="file" name="coverImage" /> --><!--when we have two images to be uploaded-->
+        <button type="submit">Upload</button> <!-- Added type attribute -->
+    </form>
+</body>
+</html>
+
+
+
+
+<!-- since file , encryption is added -->
